@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".activity.CadAlunoActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="354dp"
+        android:layout_height="529dp"
+        android:background="#92F8F2F2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadAluno"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nome"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="126dp"
+        android:layout_height="134dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/cadaluno" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="400dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Sobrenome"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/btnCadAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="CADASTRAR ALUNO"
+        android:textColor="#F3EDED"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="325dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="332dp"
+        android:ems="10"
+        android:hint="Email Educacional"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="272dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:textColorHint="#0C0C0C"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        android:ems="10"
+        android:hint="Endereço"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="101dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="220dp"
+        android:ems="10"
+        android:hint="Nº"
+        android:inputType="number"
+        android:textColorHint="#121111"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextEmailAddress2" />
+
+    <EditText
+        android:id="@+id/edtCpf"
+        android:layout_width="324dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="156dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="CPF"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#167C1A"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button2" />
+
+    <EditText
+        android:id="@+id/edtCurso"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Curso"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#C11212"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".ofcprofessor"
+    tools:layout_editor_absoluteX="3dp"
+    tools:layout_editor_absoluteY="-8dp">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="207dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="47dp"
+        android:text="OLÁ, PROFESSOR!"
+        android:textColor="#EFE9E9"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnProfessor"
+        android:layout_width="39dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="385dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginBottom="70dp"
+        android:background="#EFE3E3"
+        app:layout_constraintBottom_toTopOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="385dp"
+        android:layout_height="127dp"
+        android:layout_marginBottom="68dp"
+        android:background="#EFE3E3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cadatividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FF5722"
+        android:backgroundTint="#673AB7"
+        android:text="Cadastrar Atividade"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4" />
+
+    <Button
+        android:id="@+id/btn_cadnota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:backgroundTint="#673AB7"
+        android:text="Cadastrar Nota"
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="224dp"
+        android:layout_height="38dp"
+        android:text="Para Cadastrar Atividade, clique abaixo:"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cadatividade"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="224dp"
+        android:layout_height="38dp"
+        android:text="Para Cadastrar Nota, clique abaixo:"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cadnota"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="@+id/view8" />
+
+    <ImageButton
+        android:layout_width="122dp"
+        android:layout_height="118dp"
+        app:srcCompat="@android:drawable/ic_menu_today"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="122dp"
+        android:layout_height="118dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:srcCompat="@android:drawable/ic_menu_today" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="143dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/professoricon"
+        app:layout_constraintBottom_toTopOf="@+id/view7"
+        app:layout_constraintEnd_toStartOf="@+id/btnProfessor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

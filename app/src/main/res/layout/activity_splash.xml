@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D33F51B5"
+    tools:context=".activity.SplashActivity">
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="414dp"
+        android:layout_height="100dp"
+        android:background="#404A80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="87dp"
+        android:layout_height="97dp"
+        app:layout_constraintEnd_toEndOf="@+id/view11"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="@+id/view11"
+        app:layout_constraintTop_toTopOf="@+id/view11"
+        app:srcCompat="@drawable/logotoolbar" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="118dp"
+        android:layout_height="52dp"
+        android:background="#F44336"
+        android:backgroundTint="#2196F3"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="@+id/view11"
+        app:layout_constraintEnd_toEndOf="@+id/view11"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/view11" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="378dp"
+        android:layout_height="449dp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11"
+        app:srcCompat="@drawable/logotoolbar" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="294dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#2B3985"
+        android:text="CADASTRE-SE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

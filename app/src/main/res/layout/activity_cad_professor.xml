@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".activity.CadProfessorActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="363dp"
+        android:layout_height="535dp"
+        android:background="#92F8F2F2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadProfessor"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="136dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/cadaluno" />
+
+    <TextView
+        android:id="@+id/btnCadProfessor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="CADASTRAR PROFESSOR"
+        android:textColor="#F4EFEF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nomeTextView"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nome"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="194dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Sobrenome"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/nomeTextView" />
+
+    <EditText
+        android:id="@+id/emailTextView"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Email Educacional"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#201D1D"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress4"
+        android:layout_width="341dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Senha "
+        android:inputType="textEmailAddress"
+        android:textColorHint="#232222"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress5"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Endereco"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#2C2A2A"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress4" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="108dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Nº"
+        android:inputType="number"
+        android:textColorHint="#232121"
+        app:layout_constraintBottom_toTopOf="@+id/cpfTextView"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextEmailAddress5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress4" />
+
+    <EditText
+        android:id="@+id/cpfTextView"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="CPF"
+        android:inputType="textPassword"
+        android:textColorHint="#0C0B0B"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress5" />
+
+    <EditText
+        android:id="@+id/edtCurso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Matéria"
+        android:inputType="textPassword"
+        android:textColorHint="#121111"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/cpfTextView" />
+
+    <Button
+        android:id="@+id/btnSalvar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/edtCurso1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#BF0808"
+        android:text="Cancelar"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/edtCurso1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

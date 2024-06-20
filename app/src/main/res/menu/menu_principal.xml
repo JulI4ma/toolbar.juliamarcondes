@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/menu_alunos"
+        android:title="Aluno" />
+    <item
+        android:id="@+id/menu_professores"
+        android:title="Professor" />
+    <item
+        android:id="@+id/menu_turmas"
+        android:title="Turma" />
+    <item
+        android:id="@+id/menu_cadalunos"
+        android:title="Cadastro Aluno" />
+    <item
+        android:id="@+id/menu_cadprofessor"
+        android:title="Cadastro Professor" />
+    <item
+        android:id="@+id/menu_cadturmas"
+        android:title="Cadastro Turma" />
+    <item
+        android:id="@+id/menu_sair"
+        android:title="Sair" />
+</menu>
